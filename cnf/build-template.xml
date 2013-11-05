@@ -41,7 +41,6 @@
 
 		<!-- Load bnd and prepare the workspace -->
 		<taskdef resource="aQute/bnd/ant/taskdef.properties" classpathref="bnd-classpath" />
-		<echo message="Preparing in ${projectdir}"/>
 		<bndprepare basedir="${projectdir}" print="false" top="${release.dir}" />
 
 		<condition property="testDirExists">
