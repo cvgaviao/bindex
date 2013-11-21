@@ -65,8 +65,10 @@ pojosr.ver:               0.1.8
 
 
 ## If you use git, you might want to uncomment the following lines:
-Git-Descriptor:       ${system-allow-fail;git describe --dirty --always}
-Git-SHA:              ${system-allow-fail;git rev-list -1 HEAD}
+Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}
+Git-SHA:                  ${system-allow-fail;git rev-list -1 HEAD}
 
--diffignore: Git-Descriptor,Git-SHA
--baseline: *
+-diffignore:              Git-Descriptor,Git-SHA
+-baseline:                *
+
+Bundle-License:           http://www.apache.org/licenses/LICENSE-2.0.txt
