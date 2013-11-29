@@ -32,45 +32,7 @@
          Print extra settings
     -->
 	<target name="echo" depends="template.init,template.echo">
-		<echo>build:                  ${build}</echo>
 		<echo>javac.ee:               ${javac.ee}</echo>
-		<echo>releaserepo:            ${releaserepo}</echo>
-	</target>
-
-
-    <!--
-         JAVADOC
-    -->
-	<target name="javadoc_init" depends="template.init" unless="javadoc_initialized">
-		<fileset dir="${project}" id="srcjavafiles">
-			<include name="${src}/**/*.java"/>
-		</fileset>
-		<pathconvert refid="srcjavafiles" property="srcjavafiles.present" setonempty="false"/>
-
-		<!-- mark init has been run -->
-		<property name="javadoc_initialized" value="set" />
-	</target>
-
-	<target name="javadoc" depends="template.init,javadoc_init,template.build" if="srcjavafiles.present">
-		<javadoc
-			windowtitle="${project.name}"
-			doctitle="${project.name}"
-			destdir="${target}/javadoc"
-			source="${javac.source}"
-			sourcepath="${src}"
-			classpath="${project.buildpath}"
-			access="private"
-			author="true"
-			nodeprecated="false"
-			nodeprecatedlist="false"
-			noindex="false"
-			nonavbar="false"
-			notree="false"
-			splitindex="true"
-			use="true"
-			version="true"
-			maxmemory="256M">
-		</javadoc>
 	</target>
 
 
@@ -96,7 +58,7 @@
 		<property name="findbugs_initialized" value="set" />
 	</target>
 
-	<target name="findbugs" depends="template.init,findbugs_init,template.build">
+	<target name="findbugs" depends="template.init,findbugs_init,template.build" if="srcjavafiles.present">
 		<property name="project.bootclasspath.adjusted" value="${project.bootclasspath}" />
 		<property name="project.buildpath.adjusted" value="${project.buildpath}" />
 		<property name="project.testpath.adjusted" value="${project.testpath}" />
