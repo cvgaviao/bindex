@@ -31,9 +31,9 @@ public class Index {
 	 */
 	public static void main(String args[]) throws Exception {
 		Indexer index = new Indexer();
-		index.printCopyright(System.err);
 		index.setRepositoryFile(new File("repository.xml"));
 
+		boolean verbose = false;
 		List<File> fileList = new ArrayList<File>();
 		for (int i = 0; i < args.length; i++) {
 			try {
@@ -45,6 +45,7 @@ public class Index {
 					index.setRepositoryFile(new File(args[++i]));
 				} else if (args[i].startsWith("-v")) {
 					index.setVerbose(true);
+					verbose = true;
 				} else if (args[i].startsWith("-d")) {
 					index.setRootURL(args[++i]);
 				} else if (args[i].startsWith("-t")) {
@@ -71,6 +72,10 @@ public class Index {
 						+ e.getMessage());
 				System.exit(1);
 			}
+		}
+
+		if (verbose) {
+			index.printCopyright(System.err);
 		}
 
 		index.run(fileList);
