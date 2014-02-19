@@ -59,3 +59,4 @@ Git-SHA:              ${system-allow-fail;git rev-list -1 HEAD}
 javac.ee:       '[1.5,1.6)'
 
 -sources:       false
+-noee
