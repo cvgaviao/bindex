@@ -62,6 +62,7 @@ osgi.core.ver:            4.2
 osgi.cmpn.ver:            4.2
 mockito.ver:              '[1.8,1.9)'
 pojosr.ver:               0.1.8
+args4j.ver:               2.0.26
 
 
 ## If you use git, you might want to uncomment the following lines:
