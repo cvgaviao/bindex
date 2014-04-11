@@ -1,35 +1,4 @@
+<!--
 <FindBugsFilter>
-     <Match>
-       <Package name="org.example.tests.cli" />
-     </Match>
-     <Match>
-       <Package name="org.example.tests.osgi" />
-     </Match>
-     <Match>
-       <Package name="org.example.tests.standalone" />
-     </Match>
-     <Match>
-       <Package name="org.example.tests.utils" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.impl.bundle.bindex.cli" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.impl.bundle.repoindex.ant" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.service.indexer" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.service.indexer.impl" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.service.indexer.impl.types" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.service.indexer.impl.util" />
-     </Match>
-     <Match>
-       <Package name="org.osgi.service.indexer.osgi" />
-     </Match>
 </FindBugsFilter>
+-->
