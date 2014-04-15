@@ -189,8 +189,8 @@ Building from Source
 
 RepoIndex can be built from source as follows:
 
-	$ ant release
+	$ gradle release
 
 The JAR files will be released into `cnf/releaserepo/` and an index of the bundles will be generated into `cnf/releaserepo/index.xml`.
 
-To run all unit and integration tests, invoke `ant test`. The test report will be generated into `generated/test-reports/junit-noframes.html` under each project.
+To run all unit and integration tests, invoke `gradle build`. The test reports will be generated in `generated/reports/tests/htmlindex.html` under each project.
