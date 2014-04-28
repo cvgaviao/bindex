@@ -14,7 +14,9 @@ RepoIndex is shipped as two alternative forms:
 
 * `org.osgi.impl.bundle.repoindex.cli` is a standalone command-line application. See section "Command Line Usage" below.
 
-**N.B.:** Choose either lib OR cli, you do not need both.
+* `org.osgi.impl.bundle.repoindex.ant` is a convenience library for ANT. See section "Ant Task Usage" below.
+
+**N.B.:** The `cli` and `ant` libraries do not depend on `lib`.
 
 Command Line Usage
 ==================
@@ -34,6 +36,29 @@ If custom resource analyzers are required (see below), these can be simply place
 	java -cp org.osgi.impl.bundle.repoindex.cli.jar;MyAnalyzer.jar \
 	     org.osgi.impl.bundle.bindex.cli.Index \
 	     bundles/*.jar
+
+Ant Task Usage
+==================
+
+RepoIndex can be used as an Ant Task by adding a taskdef using the `org.osgi.impl.bundle.repoindex.ant.jar` library:
+
+	<taskdef name="repoindex" classname="org.osgi.impl.bundle.repoindex.ant.RepoIndexTask" >
+		<classpath>
+			<path location="../cnf/path/to/org.osgi.impl.bundle.repoindex.ant.jar" />
+		</classpath>
+	</taskdef>
+
+If custom resource analyzers are required (see below), these can be simply added to the classpath.
+
+The available options are configured through the tasks attributes and the resources are specified using one or more filesets.
+
+	<target name="generate-index">
+		<repoindex name="My Repository" verbose="false" pretty="true" 
+						compressed="false" out="${repository.dir}/index.xml">
+			<fileset dir="${repository.dir}" includes="**/*.jar" />
+		</repoindex>
+	</target>
+	
 
 Library Usage
 =============
