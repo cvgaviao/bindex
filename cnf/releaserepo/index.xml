@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1402341452255" name="Release" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1399875861541" name="Release" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.impl.bundle.repoindex.ant"/>
@@ -43,21 +43,21 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.impl.bundle.repoindex.ant"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="version" type="Version" value="0.1.0.201405120618"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="579548f94d1008ec3d255401c8f69039541cf6a2715912e0122188708baae436"/>
-      <attribute name="url" value="org.osgi.impl.bundle.repoindex.ant/org.osgi.impl.bundle.repoindex.ant-2.1.2.jar"/>
-      <attribute name="size" type="Long" value="388228"/>
+      <attribute name="osgi.content" value="03ffe947a5d47bbe4e995fd028bf77b53d6e4f267f740cbf90908f061e8b271e"/>
+      <attribute name="url" value="org.osgi.impl.bundle.repoindex.ant/org.osgi.impl.bundle.repoindex.ant-0.1.0.jar"/>
+      <attribute name="size" type="Long" value="388169"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.osgi.impl.bundle.repoindex.ant"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="0.1.0.201405120618"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.osgi.impl.bundle.repoindex.ant"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="0.1.0.201405120618"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=javax.security.auth.x500)"/>
@@ -112,27 +112,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.impl.bundle.repoindex.api"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.0.0.201406091917"/>
+      <attribute name="version" type="Version" value="2.0.0.201405120617"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="b725b5dd026cfc9c6e700df4c6be61091c5d96c7dc03b43eadb8f531602320bf"/>
+      <attribute name="osgi.content" value="9c99093422088ca73065fe2b81da83f899b5632f374e4f4b5afa8c5d456e55aa"/>
       <attribute name="url" value="org.osgi.impl.bundle.repoindex.api/org.osgi.impl.bundle.repoindex.api-2.0.0.jar"/>
-      <attribute name="size" type="Long" value="16178"/>
+      <attribute name="size" type="Long" value="16180"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.osgi.impl.bundle.repoindex.api"/>
-      <attribute name="bundle-version" type="Version" value="2.0.0.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.0.0.201405120617"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.osgi.impl.bundle.repoindex.api"/>
-      <attribute name="bundle-version" type="Version" value="2.0.0.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.0.0.201405120617"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.osgi.service.indexer"/>
       <attribute name="version" type="Version" value="2.1.0"/>
       <attribute name="bundle-symbolic-name" value="org.osgi.impl.bundle.repoindex.api"/>
-      <attribute name="bundle-version" type="Version" value="2.0.0.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.0.0.201405120617"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
@@ -175,21 +175,21 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.impl.bundle.repoindex.cli"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="version" type="Version" value="0.0.6.201405120620"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="93e1cfec25111ca8ca73858f668ad95723211e9ad78b0b0385b31e29142c972f"/>
-      <attribute name="url" value="org.osgi.impl.bundle.repoindex.cli/org.osgi.impl.bundle.repoindex.cli-2.1.2.jar"/>
-      <attribute name="size" type="Long" value="467740"/>
+      <attribute name="osgi.content" value="3f0cf8353cec17dc1b48efd0d3a2603597239505f175905b7fac2b4d64536e05"/>
+      <attribute name="url" value="org.osgi.impl.bundle.repoindex.cli/org.osgi.impl.bundle.repoindex.cli-0.0.6.jar"/>
+      <attribute name="size" type="Long" value="467677"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.osgi.impl.bundle.repoindex.cli"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="0.0.6.201405120620"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.osgi.impl.bundle.repoindex.cli"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="0.0.6.201405120620"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=javax.security.auth.x500)"/>
@@ -272,33 +272,33 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.impl.bundle.repoindex.lib"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="version" type="Version" value="2.1.1.201405120618"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="18c5941496a401021f3e177e63186042fdee0c90a638fcba30d42f1e9426df90"/>
-      <attribute name="url" value="org.osgi.impl.bundle.repoindex.lib/org.osgi.impl.bundle.repoindex.lib-2.1.2.jar"/>
-      <attribute name="size" type="Long" value="311018"/>
+      <attribute name="osgi.content" value="ecf2eabc725967b1655c6e0cd8faee79b2eb356e9f2e4f35979f006d80901ed5"/>
+      <attribute name="url" value="org.osgi.impl.bundle.repoindex.lib/org.osgi.impl.bundle.repoindex.lib-2.1.1.jar"/>
+      <attribute name="size" type="Long" value="310960"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.osgi.impl.bundle.repoindex.lib"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.1.1.201405120618"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.osgi.impl.bundle.repoindex.lib"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.1.1.201405120618"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.osgi.service.indexer"/>
       <attribute name="version" type="Version" value="2.1.0"/>
       <attribute name="bundle-symbolic-name" value="org.osgi.impl.bundle.repoindex.lib"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.1.1.201405120618"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
       <attribute name="version" type="Version" value="1.3.0"/>
       <attribute name="bundle-symbolic-name" value="org.osgi.impl.bundle.repoindex.lib"/>
-      <attribute name="bundle-version" type="Version" value="2.1.2.201406091917"/>
+      <attribute name="bundle-version" type="Version" value="2.1.1.201405120618"/>
       <directive name="uses" value="org.osgi.framework"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -320,10 +320,10 @@
       <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
@@ -339,9 +339,9 @@
       <attribute name="version" type="Version" value="0.0.0"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e67eca352decd8012ad92f8adb80d2eeed879803cb1cff7937d4e30ebad3432e"/>
+      <attribute name="osgi.content" value="3af2955009f36b9961068176452de9259ba5bec4535d01d5c326880cf1dace86"/>
       <attribute name="url" value="org.osgi.impl.bundle.repoindex.test/org.osgi.impl.bundle.repoindex.test-0.0.0.jar"/>
-      <attribute name="size" type="Long" value="208215"/>
+      <attribute name="size" type="Long" value="208214"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
