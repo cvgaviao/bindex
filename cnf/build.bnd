@@ -68,6 +68,7 @@ args4j.ver:               2.0.26
 # To enable baselining, uncomment the following lines:
 -baseline: *
 
+baseversion: 2.1.2
 
 ## If you use git, you might want to uncomment the following lines:
 Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}
